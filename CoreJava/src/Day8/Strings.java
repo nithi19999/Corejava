@@ -3,6 +3,8 @@
 
 package Day8;
 
+import java.util.Arrays;
+
 public class Strings {
 	
 	//int a=30;
@@ -89,13 +91,32 @@ public class Strings {
 				 
 				  s="nitheesh@gmail.com";
 				  String a[]=s.split("@");	
-				  System.out.println(a[1]);//gmail.com
-				  System.out.println(a[0]);//nitheesh
+				  System.out.println(Arrays.toString(a));	//[nitheesh, gmail.com]
+				  System.out.println(a[1]);					//gmail.com
+				  System.out.println(a[0]);					//nitheesh
 				 
+				  
+				  //exaple 1
+				  String update = "$,23,45";
+				  System.out.println(update.replace("$", " "));		//,23,45
+				  System.out.println(update.replace(",", ""));		//$2345
+				  System.out.println(update.replace("$", "").replace(",", ""));//2345	
 				 
+				 //ex 2
+				  s="adc,123@xyz";		//abc 123  xyz(, and @ is the delimeter)
+				  String arr[]=s.split(",");
+				  System.out.println(Arrays.toString(arr));	//[adc, 123@xyz]
+				  
+				  //we cant use *  % ^ & ( ) as delimeters
+				  
+				    s="Nithi avru";
+				  //i want check nithi is part of main string or not 
+				  System.out.println(s.contains("nithi")); // false
+				  System.out.println(s.contains("Nithi"));	//true
 				 
-				 
-				 
+				  // i want to make it true without equalignorecase
+				  System.out.println(s.replace('N', 'n').contains("nithi"));	//true
+				  System.out.println(s.toLowerCase().contains("nithi"));		//true
 				 
 	}
 
