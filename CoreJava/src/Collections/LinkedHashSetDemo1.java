@@ -16,7 +16,7 @@ public class LinkedHashSetDemo1 {
 		lhs.add(50);
 		lhs.add(100);
 		lhs.add(12);
-		System.out.println(lhs);//[10, 11, 50, 100, 12] insertion order preserve
+		System.out.println(lhs);//[10, 11, 50, 100, 12] insertion order preserve//hashset [50, 100, 10, 11, 12]
 
 	}
 }
