@@ -2,11 +2,11 @@ package Interface;
 
 public interface InterfaceExample1 {
 	
-	public static void hello() {
+	 void hello() {
 		System.out.println("helo nithi");
 	}
 	
-	public class demo implements InterfaceExample1{
+	 class demo implements InterfaceExample1{
 		//hello() virtually
 		public void hi() {
 			System.out.println("wtsapp");
